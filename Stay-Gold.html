@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breaking Barriers - Stay Gold</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #000000, #434343);
+      color: #FFFFFF;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #FFD700;
+      color: #000;
+      padding: 1rem 2rem;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background: #333;
+      padding: 1rem 0;
+    }
+
+    nav a {
+      color: #FFD700;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #FFFFFF;
+    }
+
+    .container {
+      flex: 1;
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      gap: 2rem;
+    }
+
+    .sidebar {
+      background: #1E1E1E;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    .main-content {
+      background: #2E2E2E;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    .event-card {
+      background: #FFD700;
+      color: #000;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s;
+    }
+
+    .event-card:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background: #333;
+      color: #FFFFFF;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    .chat-box {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #FFD700;
+      color: #000;
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+    }
+
+    .chat-header {
+      background: #333;
+      color: #FFD700;
+      padding: 0.75rem;
+      font-weight: bold;
+    }
+
+    .chat-messages {
+      height: 200px;
+      padding: 1rem;
+      overflow-y: auto;
+      background: #1E1E1E;
+    }
+
+    .chat-input {
+      display: flex;
+      border-top: 1px solid #ccc;
+    }
+
+    .chat-input input {
+      flex: 1;
+      padding: 0.75rem;
+      border: none;
+      outline: none;
+    }
+
+    .chat-input button {
+      background: #333;
+      color: #FFD700;
+      border: none;
+      padding: 0 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .chat-input button:hover {
+      background: #FFD700;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Breaking Barriers - Stay Gold</h1>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#events">Events</a>
+    <a href="#chat">Chat</a>
+    <a href="#about">About Us</a>
+  </nav>
+
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Upcoming Events</h2>
+      <div class="event-card">
+        <h3>Global Social Meet</h3>
+        <p>Connect with people worldwide and break social barriers!</p>
+      </div>
+      <div class="event-card">
+        <h3>Community Clean-Up</h3>
+        <p>Join us in making a difference locally and globally.</p>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <h2>Welcome to Breaking Barriers</h2>
+      <p>Inspired by *The Outsiders*, our mission is to unite people from different walks of life, encouraging understanding and acceptance. "Stay gold" isn't just a phrase; it's a way of life.</p>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Breaking Barriers. All Rights Reserved.</p>
+  </footer>
+
+  <div class="chat-box" id="chat">
+    <div class="chat-header">Global Chat</div>
+    <div class="chat-messages" id="messages">
+      <p><strong>Ponyboy:</strong> Stay gold, everyone!</p>
+      <p><strong>Johnny:</strong> You too, Ponyboy.</p>
+    </div>
+    <div class="chat-input">
+      <input type="text" id="chatInput" placeholder="Type a message...">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script>
+    function sendMessage() {
+      const input = document.getElementById('chatInput');
+      const message = input.value.trim();
+      if (message) {
+        const messageContainer = document.getElementById('messages');
+        const newMessage = document.createElement('p');
+        newMessage.innerHTML = `<strong>You:</strong> ${message}`;
+        messageContainer.appendChild(newMessage);
+        input.value = '';
+        messageContainer.scrollTop = messageContainer.scrollHeight;
+      }
+    }
+  </script>
+</body>
+</html>
