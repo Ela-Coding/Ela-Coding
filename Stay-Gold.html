@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -142,6 +143,9 @@
       background: #FFD700;
       color: #000;
     }
+	  .aibot {
+		  color: black;
+	  }
   </style>
 </head>
 <body>
@@ -150,10 +154,11 @@
   </header>
 
   <nav>
-    <a href="#home">Home</a>
-    <a href="#events">Events</a>
+    <a href="stay-gold.html">Home</a>
+    <a href="stay-gold-events.html">Events</a>
     <a href="#chat">Chat</a>
     <a href="#about">About Us</a>
+	<a href="stay-gold-accout.html">Join</a>
   </nav>
 
   <div class="container">
@@ -190,20 +195,29 @@
       <button onclick="sendMessage()">Send</button>
     </div>
   </div>
-
-  <script>
-    function sendMessage() {
-      const input = document.getElementById('chatInput');
-      const message = input.value.trim();
-      if (message) {
-        const messageContainer = document.getElementById('messages');
-        const newMessage = document.createElement('p');
-        newMessage.innerHTML = `<strong>You:</strong> ${message}`;
-        messageContainer.appendChild(newMessage);
-        input.value = '';
-        messageContainer.scrollTop = messageContainer.scrollHeight;
+  <script class="aibot" src="https://cdn.jotfor.ms/s/umd/latest/for-embedded-agent.js"></script>
+<script>
+  window.addEventListener("DOMContentLoaded", function() {
+    window.AgentInitializer.init({
+      rootId: "JotformAgent-0194c75ad16a7e008e727bb2721f1a95cdc0",
+      formID: "0194c75ad16a7e008e727bb2721f1a95cdc0",
+      queryParams: ["skipWelcome=1", "maximizable=1"],
+      domain: "https:\/\/www.jotform.com",
+      isInitialOpen: false,
+      isDraggable: false,
+      background: "linear-gradient(180deg, #C8CEED 0%, #C8CEED 100%)",
+      buttonBackgroundColor: "#0a1551",
+      buttonIconColor: "#fff",
+      variant: false,
+      customizations: {
+        greeting: "Yes",
+        greetingMessage: "Hi! How can I help you?",
+        pulse: "Yes",
+        position: "left"
+		
       }
-    }
-  </script>
+    });
+  });
+</script>
 </body>
 </html>
