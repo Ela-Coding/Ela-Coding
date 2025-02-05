@@ -1,3 +1,13 @@
+h1 {
+    background: #FFD700;
+    color: #000;
+    padding: 1rem 2rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-shadow: #00000034 2px 2px;
+
+}
+
 h2 {
     background-color: #ffd700;
     border-radius: 15px;
@@ -5,6 +15,7 @@ h2 {
     outline: rgb(44, 44, 44) solid 5px;
     box-shadow: 6 4px 10px rgba(0, 0, 0, 0.3);
     text-align: center;
+    
     
     }
     body {
@@ -98,10 +109,12 @@ legend {
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
+    transition: transform 0.3s;
   }
 
   nav a:hover {
     color: #FFFFFF;
+    transform: scale(1.1);
   }
   footer {
     background: #333;

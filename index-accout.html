@@ -6,79 +6,16 @@
   <title>Breaking Barriers - Stay Gold</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 	<h1>Breaking Barriers - Stay Gold</h1>
+  <link rel="stylesheet" href="Account.css">
 	<style>
-	* {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Roboto', sans-serif;
-      background: linear-gradient(135deg, #000000, #434343);
-      color: #FFFFFF;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-
-    h1 {
-      background: #FFD700;
-      color: #000;
-      padding: 1rem 2rem;
-      text-align: center;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    }
-		
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      background: #333;
-      padding: 1rem 0;
-    }
-
-    nav a {
-      color: #FFD700;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #FFFFFF;
-		}
-    footer {
-      background: #333;
-      color: #FFFFFF;
-      text-align: center;
-      padding: 1rem 0;
-		}
-		
-		.signup {
-			text-align: center;
-			color: #FFD700; 
-			height: 100px
-		}
-		.password {
-			text-align: center;
-			color: #FFD700; 
-			height: 100px
-		}
-		.age {
-			text-align: center;
-			color: #FFD700;
-			height: 100;
-		}
+	
 	</style>
 	
 	<nav>
     <a href="index.html">Home</a>
-    <a href="index-events.html">Events</a>
-    <a href="#chat">Chat</a>
-    <a href="#about">About Us</a>
 	<a href="index-accout.html">Join</a>
 	<a href="index-questionnaire.html">Questionnaire</a>
+  <a href="index-signup.html">Account</a>
   </nav>
 	<form class="signup">
 <label> 
@@ -91,8 +28,8 @@
 	<h2>Password:</h2></label><br>
 <input type="text" name="password">
 </form>
-	
-	<h2 class="age">How old are you?</h2></br>
+	<div class="age">
+	<h2>How old are you?</h2></br>
 <select name="item" />
 <option value="blank ">-</option>
 <option value="0-1 ">13-18</option>
@@ -101,7 +38,8 @@
 <option value="3-4">50-65</option>
 <option value="4-5">65-85</option>
 </select>
-<a href="index-signup.html">Continue</a>
+</div>
+<a class="submiit" href="index-signup.html">Continue</a>
   <footer>
     <p>&copy; 2024 Breaking Barriers. All Rights Reserved.</p>
   </footer>

@@ -36,14 +36,16 @@
     }
 		h2 {
 			text-align: center;
+      padding: 0.5rem 1rem;
 		}
 
     h1 {
-      background: #FFD700;
-      color: #000;
-      padding: 1rem 2rem;
-      text-align: center;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background: #FFD700;
+    color: #000;
+    padding: 1rem 2rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-shadow: #00000034 2px 2px;
     }
 
     nav {
@@ -59,10 +61,12 @@
       text-decoration: none;
       font-weight: bold;
       transition: color 0.3s;
+      transition: transform 0.3s;
     }
 
     nav a:hover {
       color: #FFFFFF;
+      transform: scale(1.1);
     }
     footer {
       background: #333;
@@ -81,17 +85,29 @@
 			color: white;
 			text-align: center;
 		}
+
+    .submiit {
+    background-color: #ffd700;
+    color: black;
+    padding: 1rem 1rem;
+    box-shadow: 10 8px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    outline: black solid 3px;
+    text-decoration: none;
+    text-align: center;
+    margin: auto;
+    width: 25%;
+    }
   </style>
 	<nav>
     <a href="index.html">Home</a>
-    <a href="index-events.html">Events</a>
-    <a href="#chat">Chat</a>
-    <a href="#about">About Us</a>
 	<a href="index-accout.html">Join</a>
 	<a href="index-questionnaire.html">Questionnaire</a>
+  <a href="index-signup.html">Account</a>
   </nav>
-	<a class="people"href="index-saved-people.html">Click here for a list of people that match your answers</a>
-	<h2>Thank you for joining Breaking Barriers-Stay Gold</h2>
+  <h2>Thank you for joining Breaking Barriers-Stay Gold</h2>
+	<a class="submiit"href="index-saved-people.html">Click here for a list of people that match your answers</a>
+
   <footer>
     <p>&copy; 2024 Breaking Barriers. All Rights Reserved.</p>
   </footer>
