@@ -4,18 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobbies Questionnaire</title>
+    <link rel="stylesheet" href="QUESTIONNAIRE.css">
 </head>
 <body>
-    <style>
-        h2 {
-        background-color: #ffd700;
-		color: black;
-		}
-		body {
-			background: linear-gradient(135deg, #000000, #434343);
-			color: white
-		}
-    </style>
 	 <header>
     <h1>Breaking Barriers - Stay Gold</h1>
   </header>
@@ -30,9 +21,12 @@
   </nav>
     <h1>Hobbies Questionnaire</h1>
     <form>
+      <br>
         <h2>⚽ Sports & Outdoor Activities</h2>
+        <br>
         <fieldset>
-            <legend>Ball Sports</legend>
+            <legend class="title">Ball Sports</legend>
+            <br>
             <input type="checkbox" id="basketball" name="hobbies" value="Basketball">
             <label for="basketball">Basketball</label><br>
             <input type="checkbox" id="soccer" name="hobbies" value="Soccer">
@@ -43,10 +37,12 @@
             <label for="volleyball">Volleyball</label><br>
             <input type="checkbox" id="golf" name="hobbies" value="Golf">
             <label for="golf">Golf</label><br>
+            <br>
         </fieldset>
-        
+        <br>
         <fieldset>
-            <legend>Extreme & Adventure Sports</legend>
+            <legend class="title">Extreme & Adventure Sports</legend>
+            <br>
             <input type="checkbox" id="skydiving" name="hobbies" value="Skydiving">
             <label for="skydiving">Skydiving</label><br>
             <input type="checkbox" id="bungeeJumping" name="hobbies" value="Bungee Jumping">
@@ -57,10 +53,11 @@
             <label for="motocross">Motocross</label><br>
             <input type="checkbox" id="rockClimbing" name="hobbies" value="Rock Climbing">
             <label for="rockClimbing">Rock Climbing</label><br>
+            <br>
         </fieldset>
-        
+        <br>
         <fieldset>
-            <legend>Water Sports</legend>
+            <legend class="title">Water Sports</legend><br>
             <input type="checkbox" id="surfing" name="hobbies" value="Surfing">
             <label for="surfing">Surfing</label><br>
             <input type="checkbox" id="scubaDiving" name="hobbies" value="Scuba Diving">
@@ -71,10 +68,11 @@
             <label for="freediving">Freediving</label><br>
             <input type="checkbox" id="whitewaterRafting" name="hobbies" value="Whitewater Rafting">
             <label for="whitewaterRafting">Whitewater Rafting</label><br>
+            <br>
         </fieldset>
-
+        <br>
         <fieldset>
-            <legend>Racket & Combat Sports</legend>
+            <legend class="title">Racket & Combat Sports</legend><br>
             <input type="checkbox" id="badminton" name="hobbies" value="Badminton">
             <label for="badminton">Badminton</label><br>
             <input type="checkbox" id="tableTennis" name="hobbies" value="Table Tennis">
@@ -85,10 +83,11 @@
             <label for="boxing">Boxing</label><br>
             <input type="checkbox" id="mma" name="hobbies" value="MMA">
             <label for="mma">MMA</label><br>
+            <br>
         </fieldset>
-        
+        <br>
         <fieldset>
-            <legend>Winter Sports</legend>
+            <legend class="title">Winter Sports</legend><br>
             <input type="checkbox" id="skiing" name="hobbies" value="Skiing">
             <label for="skiing">Skiing</label><br>
             <input type="checkbox" id="snowboarding" name="hobbies" value="Snowboarding">
@@ -99,10 +98,11 @@
             <label for="iceHockey">Ice Hockey</label><br>
             <input type="checkbox" id="sledding" name="hobbies" value="Sledding">
             <label for="sledding">Sledding</label><br>
+            <br>
         </fieldset>
-        
+        <br>
         <fieldset>
-            <legend>Cycling & Racing</legend>
+            <legend class="title">Cycling & Racing</legend><br>
             <input type="checkbox" id="bmxRacing" name="hobbies" value="BMX Racing">
             <label for="bmxRacing">BMX Racing</label><br>
             <input type="checkbox" id="roadCycling" name="hobbies" value="Road Cycling">
@@ -113,10 +113,11 @@
             <label for="goKartRacing">Go-Kart Racing</label><br>
             <input type="checkbox" id="formulaRacing" name="hobbies" value="Formula Racing">
             <label for="formulaRacing">Formula Racing</label><br>
+            <br>
         </fieldset>
-        
+        <br> 
         <fieldset>
-            <legend>Running & Endurance Sports</legend>
+            <legend class="title">Running & Endurance Sports</legend><br>
             <input type="checkbox" id="marathonRunning" name="hobbies" value="Marathon Running">
             <label for="marathonRunning">Marathon Running</label><br>
             <input type="checkbox" id="trailRunning" name="hobbies" value="Trail Running">
@@ -127,16 +128,25 @@
             <label for="parkour">Parkour</label><br>
             <input type="checkbox" id="speedWalking" name="hobbies" value="Speed Walking">
             <label for="speedWalking">Speed Walking</label><br>
+            <br>
         </fieldset>
-        
+        <br>
         <h2>🎮 Tech & Gaming Hobbies</h2>
+        <br>
         <fieldset>
-            <legend>Video Gaming</legend>
+            <legend class="title">Video Gaming</legend>
+            <br>
             <input type="checkbox" id="fps" name="hobbies" value="First-Person Shooters (COD, Halo)">
             <label for="fps">First-Person Shooters (COD, Halo)</label><br>
             <input type="checkbox" id="racingGames" name="hobbies" value="Racing Games (Forza, Gran Turismo)">
-            <label for="racingGames">Racing Games (Forza, Gran Turismo)</label><fieldset>
-            <legend>Game Development & Programming</legend>
+            <label for="racingGames">Racing Games (Forza, Gran Turismo)</label>
+            <br>
+            <br>
+          </fieldset>
+          <br>
+
+        <fieldset>
+            <legend class="title">Game Development & Programming</legend><br>
             <input type="checkbox" id="unity" name="hobbies" value="Unity & Unreal Engine Development">
             <label for="unity">Unity & Unreal Engine Development</label><br>
             <input type="checkbox" id="pixelArt" name="hobbies" value="Pixel Art & 2D Game Creation">
@@ -147,10 +157,12 @@
             <label for="aiProgramming">AI Programming for NPCs</label><br>
             <input type="checkbox" id="moddingGames" name="hobbies" value="Modding Games">
             <label for="moddingGames">Modding Games</label><br>
-        </fieldset>
+            <br>
+          </fieldset>
 
+          <br>
         <fieldset>
-            <legend>Tech & Engineering</legend>
+            <legend class="title">Tech & Engineering</legend><br>
             <input type="checkbox" id="ethicalHacking" name="hobbies" value="Ethical Hacking">
             <label for="ethicalHacking">Ethical Hacking</label><br>
             <input type="checkbox" id="buildingPCs" name="hobbies" value="Building Custom PCs">
@@ -161,11 +173,13 @@
             <label for="aiML">AI & Machine Learning</label><br>
             <input type="checkbox" id="homeAutomation" name="hobbies" value="Home Automation">
             <label for="homeAutomation">Home Automation</label><br>
+            <br>
         </fieldset>
-        
+        <br>
         <h2>🍽️ Food & Drink Hobbies</h2>
+        <br>
         <fieldset>
-            <legend>Cooking & Baking</legend>
+            <legend class="title">Cooking & Baking</legend><br>
             <input type="checkbox" id="italianCuisine" name="hobbies" value="Italian Cuisine Cooking">
             <label for="italianCuisine">Italian Cuisine Cooking</label><br>
             <input type="checkbox" id="breadBaking" name="hobbies" value="Bread Baking">
@@ -176,10 +190,11 @@
             <label for="sushiMaking">Sushi Making</label><br>
             <input type="checkbox" id="cakeDecorating" name="hobbies" value="Cake Decorating">
             <label for="cakeDecorating">Cake Decorating</label><br>
+            <br>
         </fieldset>
-        
+        <br>
         <fieldset>
-            <legend>Beverage Specialties</legend>
+            <legend class="title">Beverage Specialties</legend><br>
             <input type="checkbox" id="coffeeBrewing" name="hobbies" value="Coffee Brewing & Latte Art">
             <label for="coffeeBrewing">Coffee Brewing & Latte Art</label><br>
             <input type="checkbox" id="cocktailMixing" name="hobbies" value="Cocktail Mixing & Bartending">
@@ -190,11 +205,13 @@
             <label for="wineWhiskeyTasting">Wine & Whiskey Tasting</label><br>
             <input type="checkbox" id="homeBrewing" name="hobbies" value="Home Brewing (Beer, Kombucha)">
             <label for="homeBrewing">Home Brewing (Beer, Kombucha)</label><br>
+            <br>
         </fieldset>
-        
+        <br>
         <h2>🧠 Mind & Strategy Hobbies</h2>
+        <br>
         <fieldset>
-            <legend>Board & Strategy Games</legend>
+            <legend class="title">Board & Strategy Games</legend><br>
             <input type="checkbox" id="chess" name="hobbies" value="Chess">
             <label for="chess">Chess</label><br>
             <input type="checkbox" id="go" name="hobbies" value="Go">
@@ -205,10 +222,12 @@
             <label for="risk">Risk</label><br>
             <input type="checkbox" id="poker" name="hobbies" value="Poker">
             <label for="poker">Poker</label><br>
+            <br>
         </fieldset>
         
+        <br>
         <fieldset>
-            <legend>Puzzles & Brain Teasers</legend>
+          <legend class="title">Puzzles & Brain Teasers</legend><br>
             <input type="checkbox" id="rubiksCube" name="hobbies" value="Rubik’s Cube Speed Solving">
             <label for="rubiksCube">Rubik’s Cube Speed Solving</label><br>
             <input type="checkbox" id="sudoku" name="hobbies" value="Sudoku">
@@ -219,65 +238,19 @@
             <label for="escapeRooms">Escape Rooms</label><br>
             <input type="checkbox" id="riddles" name="hobbies" value="Riddles">
             <label for="riddles">Riddles</label><br>
+            <br>
         </fieldset>
+        
     </form>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Roboto', sans-serif;
-      background: linear-gradient(135deg, #000000, #434343);
-      color: #FFFFFF;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-
-    h1 {
-      background: #FFD700;
-      color: #000;
-      padding: 1rem 2rem;
-      text-align: center;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      background: #333;
-      padding: 1rem 0;
-    }
-
-    nav a {
-      color: #FFD700;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #FFFFFF;
-    }
-    footer {
-      background: #333;
-      color: #FFFFFF;
-      text-align: center;
-      padding: 1rem 0;
-    }
-	  h3 {
-
-	 background: #333;
-      color: #FFFFFF;
-      text-align: center;
-      padding: 1rem 0;    
-	  }
-	</style>
-	<a href="index.html">Submit</a>
+    <br>
+    <div class="submitdiv">
+      <br>
+      <br>
+	<a class="submiit" href="index.html">Submit</a>
+  <br>
+  <br>
+  <br>
+</div>
   <footer>
     <p>&copy; 2024 Breaking Barriers. All Rights Reserved.</p>
   </footer>
